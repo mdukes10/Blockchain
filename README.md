@@ -28,15 +28,15 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 
 * Type `2` to pick the `Configure new genesis` option, then `1` to `Create new genesis from scratch`
 * Type `1` to choose `Proof of Work` and continue.
-![tm8](images/tm8.png)
+![tm8](Images/tm8.png)
 
 * Copy and paste an address from your Ethereum wallet in MyCrypto, without the `0x` prefix.
- ![mc5](images/mc5.png)
+ ![mc5](Images/mc5.png)
 
 * Hit enter again on the blank `0x` address to continue the prompt:
 
  * Enter `827` as the `Chain ID` number. 
- ![tm1](images/tm1.png)
+ ![tm1](Images/tm1.png)
 
 * Create the first node's data directory using the geth command and a couple of command line flags by running the following line in your terminal window 
 
@@ -44,7 +44,7 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 
 ./geth account new --datadir node2
 
- ![tm5](images/tm5.png)
+ ![tm5](Images/tm5.png)
 
 * Initialize the first node and the second node with the following commands
 
@@ -52,7 +52,7 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 
  >./geth init solo.json --datadir node2
 
- ![tm6](images/tm6.png)
+ ![tm6](Images/tm6.png)
 
  
 
@@ -69,38 +69,38 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
  >### The `--minerthreads` flag tells `geth` how many CPU threads, or "workers" to use during mining. 
 
 * Scroll up in the terminal window where `node1` is running, and copy the entire `enode://` address (including the last `@address:port` segment) of the first node located in the `Started P2P Networking` line:
- ![tm10](images/tm10.png)
+ ![tm10](Images/tm10.png)
 
 * Open another terminal window and navigate to the same directory as before.
 
 * Launch the second node, enable RPC, change the sync port, and pass the `enode://` address of the first node in quotes by running the following command:
 
-  ![tm11](images/tm11.png)
+  ![tm11](Images/tm11.png)
 
 
 >### The `--rpc` flag enables us to talk to our second node, which will allow us to use MyCrypto 
 
 
 >### The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
- ![tm9](images/tm9.png)
+ ![tm9](Images/tm9.png)
 
 
 * Open up MyCrypto to get the private key of the ETH address you use to pre-fund your chain. Be sure the `Kovan` network is selected.
 
 * Unlock your wallet using your mnemonic phrase and choose the address you want to inspect.
- ![mc6](images/mc6.png)
+ ![mc6](Images/mc6.png)
 
 
 * Select the ETH address you use to pre-fund your chain, and in the "Select" dropdown list, choose `Wallet Info`.
- ![mc1](images/mc1.png)
+ ![mc1](Images/mc1.png)
 
 
 * Click on the eye icon next to the `Private Key` field, and copy and paste the private key of the wallet. Keep this handy, as you will use it in a bit.
- ![mc4](images/mc4.png)
+ ![mc4](Images/mc4.png)
 
 
 * Open up MyCrypto, then click `Change Network` at the bottom left:
- ![mc7](images/mc7.png)
+ ![mc7](Images/mc7.png)
 
 * Click "Add Custom Node", then add the custom network information that you set in the genesis.
 
@@ -109,7 +109,7 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 * The chain ID must match what you came up with earlier.
 
 * The URL is pointing to the default RPC port on your local machine. Use `http://127.0.0.1:8545`.
- ![mc3](images/mc3.png)
+ ![mc3](Images/mc3.png)
 
 
 * On the left pane menu, click on "View & Send".
@@ -117,22 +117,22 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 * Next, click on the "Private Key" option to continue.
 
 * A new window will pop-up, paste the private key of the pre-fund wallet and click on the "Unlock" button to continue.
- ![mc8](images/mc8.png)
+ ![mc8](Images/mc8.png)
 
 
 Now we're going to send a transaction to ourselves to test it out. Follow the next steps.
 
 * Copy the pre-fund address into the "To Address" field, then fill in an arbitrary amount of ETH:
- ![mc9](images/mc9.png)
+ ![mc9](Images/mc9.png)
 
 
 * Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
- ![mc10](images/mc10.png)
+ ![mc10](Images/mc10.png)
 
 
 * Click the `Check TX Status` when the green message pops up, confirm the logout:
- ![mc11](images/mc11.png)
+ ![mc11](Images/mc11.png)
 
 * You can click the `Check TX Status` button to update the status.
- ![mc12](images/mc12.png)
+ ![mc12](Images/mc12.png)
 # Congratulations!!!
