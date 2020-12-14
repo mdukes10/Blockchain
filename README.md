@@ -23,6 +23,7 @@ Open a new terminal window and nagivate to Directory where we installed Ethereum
 
 * Run the `./puppeth command.`
 * Type the network name "solo" and hit enter to move forward in the terminal
+
 ![tm7](images/tm7.png)
 
 * Type `2` to pick the `Configure new genesis` option, then `1` to `Create new genesis from scratch`
